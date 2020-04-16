@@ -74,13 +74,13 @@ header .menu ul li:hover {
 /*** INIZIO MAIN ***/
 main .conteiner {
   margin: 10px 0;
-  po
+
 }
 
 main .conteiner::after{
   display:table;
-  content:””;
-  clear:both
+  content:"";
+  clear:both;
 }
 
 main .conteiner .col {
@@ -134,4 +134,38 @@ main .conteiner .col.dx .testo:last-child {
 /*** FINE MAIN ***/
 
 /*** INIZIO FOOTER ***/
+footer .box{
+  background-color: white;
+  height: 150px;
+  margin-bottom: 25px;
+  color: lightgrey;
+}
+
+footer .box p {
+  text-align: center;
+}
+
+footer .box .social {
+  position: relative;
+  font-size: 50px;
+  margin-top: 35px;
+}
+
+footer .box .social :first-child{
+  color:red;
+  position: absolute;
+  left: 25%;
+}
+
+footer .box .social :nth-child(2){
+  color:red;
+  position: absolute;
+  left: 50%;
+}
+
+footer .box .social :last-child{
+  color:red;
+  position: absolute;
+  left: 75%;
+}
 /*** FINE FOOTER ***/

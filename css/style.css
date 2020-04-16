@@ -10,7 +10,7 @@ body {
 }
 
 .wrapper {
-  width: 1024px;
+  width: 80%;
   margin: auto;
 }
 /*** INIZIO HEADER ***/
@@ -48,7 +48,7 @@ header .titolo .testo {
 /* inizio menu */
 header .menu {
   font-family: 'Roboto';
-    background-color: #504741;
+  background-color: #504741;
 }
 
 header .menu ul {
@@ -72,19 +72,39 @@ header .menu ul li:hover {
 /*** FINE HEADER ***/
 
 /*** INIZIO MAIN ***/
+main .conteiner {
+  margin: 10px 0;
+  po
+}
+
+main .conteiner::after{
+  display:table;
+  content:””;
+  clear:both
+}
 
 main .conteiner .col {
-  list-style: none;
   padding: 10px;
   float: left;
   background-color: white;
+  border-radius: 10px;
 }
 /* inizio col sx */
 main .conteiner .col.sx {
+  color:green;
+  list-style: none;
   width: 20%;
   margin-right: 5%;
 }
 
+main .conteiner .col.sx i{
+  color: black;
+  font-weight: bold;
+}
+
+main .conteiner .col.sx ul{
+  list-style: none;
+}
 
 /* fine col sx */
 /* inizio col center */
@@ -95,8 +115,23 @@ main .conteiner .col.center {
 /* inizio col center */
 /* inizio col dx */
 main .conteiner .col.dx {
+  padding: 0;
+  background-color: inherit;
   width: 20%;
 }
-/* fine col dx */
 
+main .conteiner .col.dx .testo {
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+main .conteiner .col.dx .testo:last-child {
+  margin-bottom: 0px;
+}
+/* fine col dx */
 /*** FINE MAIN ***/
+
+/*** INIZIO FOOTER ***/
+/*** FINE FOOTER ***/
